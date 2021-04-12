@@ -1,11 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
+import 'dart:ui';
+
 // **************************************************************************
 // ModelGenerator
 // **************************************************************************
 
 import 'package:json_annotation/json_annotation.dart';
-import 'dart:ui';
 
 part 'model_generator.model.g.dart';
 
@@ -23,7 +24,6 @@ String _args(
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class Language {
@@ -146,6 +146,13 @@ class Language {
   )
   final LanguageSettings settings;
 
+  @JsonKey(
+    name: 'system_apps',
+    required: true,
+    disallowNullValue: true,
+  )
+  final LanguageSystemApps systemApps;
+
   Language(
     this.common,
     this.firstRun,
@@ -164,6 +171,7 @@ class Language {
     this.health,
     this.notifications,
     this.settings,
+    this.systemApps,
   );
 
   factory Language.fromJson(Map<String, dynamic> json) =>
@@ -172,7 +180,6 @@ class Language {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageAboutPage {
@@ -225,7 +232,6 @@ class LanguageAboutPage {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageAlertingApps {
@@ -308,7 +314,6 @@ class LanguageAlertingApps {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageAlertingAppsFilter {
@@ -341,7 +346,6 @@ class LanguageAlertingAppsFilter {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageAlertingAppsFilterAppSource {
@@ -375,7 +379,6 @@ class LanguageAlertingAppsFilterAppSource {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageCommon {
@@ -415,7 +418,6 @@ class LanguageCommon {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageFirstRun {
@@ -441,7 +443,6 @@ class LanguageFirstRun {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageHealth {
@@ -518,7 +519,6 @@ class LanguageHealth {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageHealthActivity {
@@ -544,7 +544,6 @@ class LanguageHealthActivity {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageHealthDatabase {
@@ -613,7 +612,6 @@ class LanguageHealthDatabase {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageHealthDatabasePermanentlyDelete {
@@ -659,7 +657,6 @@ class LanguageHealthDatabasePermanentlyDelete {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageHealthSleep {
@@ -685,7 +682,6 @@ class LanguageHealthSleep {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageHealthSync {
@@ -730,7 +726,6 @@ class LanguageHealthSync {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageHomePage {
@@ -791,7 +786,6 @@ class LanguageHomePage {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageMoreSetupPage {
@@ -824,7 +818,6 @@ class LanguageMoreSetupPage {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageNotifications {
@@ -869,7 +862,6 @@ class LanguageNotifications {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageNotificationsSilence {
@@ -914,7 +906,6 @@ class LanguageNotificationsSilence {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguagePairPage {
@@ -947,7 +938,6 @@ class LanguagePairPage {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguagePairPageSearchAgain {
@@ -973,7 +963,6 @@ class LanguagePairPageSearchAgain {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguagePairPageStatus {
@@ -999,7 +988,6 @@ class LanguagePairPageStatus {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageRecurrence {
@@ -1052,7 +1040,6 @@ class LanguageRecurrence {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageSettings {
@@ -1193,7 +1180,6 @@ class LanguageSettings {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageSettingsSubscription {
@@ -1219,7 +1205,6 @@ class LanguageSettingsSubscription {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageSettingsTimeline {
@@ -1245,7 +1230,6 @@ class LanguageSettingsTimeline {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageSetup {
@@ -1264,7 +1248,6 @@ class LanguageSetup {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageSetupSuccess {
@@ -1316,7 +1299,6 @@ class LanguageSetupSuccess {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageSplashPage {
@@ -1342,7 +1324,58 @@ class LanguageSplashPage {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
+  disallowUnrecognizedKeys: true,
+)
+class LanguageSystemApps {
+  @JsonKey(
+    name: 'settings',
+    required: true,
+    disallowNullValue: true,
+  )
+  final String settings;
+
+  @JsonKey(
+    name: 'music',
+    required: true,
+    disallowNullValue: true,
+  )
+  final String music;
+
+  @JsonKey(
+    name: 'notifications',
+    required: true,
+    disallowNullValue: true,
+  )
+  final String notifications;
+
+  @JsonKey(
+    name: 'alarms',
+    required: true,
+    disallowNullValue: true,
+  )
+  final String alarms;
+
+  @JsonKey(
+    name: 'watchfaces',
+    required: true,
+    disallowNullValue: true,
+  )
+  final String watchfaces;
+
+  LanguageSystemApps(
+    this.settings,
+    this.music,
+    this.notifications,
+    this.alarms,
+    this.watchfaces,
+  );
+
+  factory LanguageSystemApps.fromJson(Map<String, dynamic> json) =>
+      _$LanguageSystemAppsFromJson(json);
+}
+
+@JsonSerializable(
+  createToJson: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageTimelineAttribute {
@@ -1387,7 +1420,6 @@ class LanguageTimelineAttribute {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageTimelineAttributeHeading {
@@ -1433,7 +1465,6 @@ class LanguageTimelineAttributeHeading {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageTimelineAttributeParagraph {
@@ -1467,7 +1498,6 @@ class LanguageTimelineAttributeParagraph {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageTimelineAttributeSubtitle {
@@ -1521,7 +1551,6 @@ class LanguageTimelineAttributeSubtitle {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageTimelineAttributeTitle {
@@ -1574,7 +1603,6 @@ class LanguageTimelineAttributeTitle {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageTimelineSync {
@@ -1593,7 +1621,6 @@ class LanguageTimelineSync {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageTimelineSyncWatchFull {
@@ -1619,7 +1646,6 @@ class LanguageTimelineSyncWatchFull {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageWatchesPage {
@@ -1672,7 +1698,6 @@ class LanguageWatchesPage {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageWatchesPageAction {
@@ -1717,7 +1742,6 @@ class LanguageWatchesPageAction {
 
 @JsonSerializable(
   createToJson: false,
-  nullable: false,
   disallowUnrecognizedKeys: true,
 )
 class LanguageWatchesPageStatus {
